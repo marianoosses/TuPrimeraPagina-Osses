@@ -4,6 +4,7 @@ from .models import Familiar,Curso,Estudiante
 from .forms import CursoForm,EstudianteForm
 
 # Create your views here.
+
 from django.http import HttpResponse
 
 def inicio(request):
