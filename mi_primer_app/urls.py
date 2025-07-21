@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import saludo, saludo_con_template, crear_familiar, inicio, crear_curso,crear_estudiante, buscar_cursos, cursos
+from .views import saludo, saludo_con_template, crear_familiar, inicio, crear_curso,crear_estudiante, buscar_cursos, cursos,crear_profesor
                     
 
 urlpatterns = [
@@ -12,4 +12,5 @@ urlpatterns = [
     path('crear-estudiante/', crear_estudiante, name='crear-estudiante'),
     path('cursos/', cursos, name='cursos'),
     path('cursos/buscar', buscar_cursos, name='buscar-cursos'),
+    path('crear-profesor/', crear_profesor, name='crear-profesor'),
 ]

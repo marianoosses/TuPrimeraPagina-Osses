@@ -32,3 +32,14 @@ class Estudiante(models.Model):
 
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
+    
+class Profesor(models.Model):
+    nombre = models.CharField(max_length=100)
+    apellido = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    edad = models.IntegerField()
+    fecha_ingreso = models.DateField(auto_now_add=True)
+    materia = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f"{self.nombre} {self.apellido}"
